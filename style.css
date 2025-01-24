@@ -20,3 +20,18 @@ header{
 .CoWorld-logo img{
     width: 100%;
 }
+
+
+/***Header-left class***/
+.Header-left{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.Header-left a{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
