@@ -1,10 +1,12 @@
-body{
+/***Adding properties to body***/
+body {
     margin: 0;
     padding: 0;
-    background-color: rgb(13, 103, 155);
+    background-color: rgb(240, 240, 245);
 }
 
-header{
+/***Adding properties to whole header***/
+header {
     height: 60px;
     background-color: white;
     width: 100%;
@@ -13,25 +15,60 @@ header{
     align-items: center;
 }
 
-.CoWorld-logo{
+/* Adding properties to the logo */
+.CoWorld-logo {
     width: 40px;
+    padding: 0px 20px;
 }
 
-.CoWorld-logo img{
+
+/* Adding width to logo img */
+.CoWorld-logo img {
     width: 100%;
 }
 
 
 /***Header-left class***/
-.Header-left{
+.Header-left {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
 
-.Header-left a{
+/* Adding properties to all a link */
+.Header-left a {
     display: flex;
     height: 100%;
     align-items: center;
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+/***Adding hover effect to Header-left field ***/
+.Header-left a:hover {
+    background-color: rgba(13, 155, 72, 0.2);
+    color: rgb(13, 155, 72);
+}
+
+/***Header left adding padding for the logo***/
+.Header-left a:first-child {
+    padding: 0px;
+}
+
+/***Hover transparent for Header-left logo***/
+.Header-left a:first-child:hover {
+    background-color: transparent;
+}
+
+
+/* Giving padding to header's left a link between title and icon */
+.fa-regular {
+    padding: 0px 3px;
 }
