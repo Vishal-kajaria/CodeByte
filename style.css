@@ -1,24 +1,100 @@
+:root {
+    --bs-green: rgb(13, 155, 72);
+    --bs-brightblue: rgb(0, 120, 200);
+    --bs-orange: rgb(255, 143, 0);
+    --bs-neutraldarkgrey: rgb(70, 70, 70);
+    --bs-white: rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 /***Adding properties to body***/
 body {
     margin: 0;
     padding: 0;
     background-color: rgb(240, 240, 245);
+    width: 100%;
 }
 
 /***Adding properties to whole header***/
 header {
     height: 60px;
-    background-color: white;
+    background-color: var(--bs-white);
     width: 100%;
     padding: 0px 20px;
     display: flex;
     align-items: center;
 }
 
+
+/* utility-class btn for dark-light mode,and other buttons(whole right header)*/
+.btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Adding background color for Update,get certified, free website and login buttons */
+.bg-green {
+    background-color: var(--bs-green);
+    color: var(--bs-white);
+}
+
+
+.bg-brightblue {
+    background-color: var(--bs-brightblue);
+    color: var(--bs-white);
+}
+
+.bg-orange {
+    background-color: var(--bs-orange);
+    color: black;
+}
+
+.bg-neutraldarkgrey {
+    background-color: var(--bs-neutraldarkgrey);
+    color: var(--bs-white);
+}
+
+
+
+
+
+
+
+
+/* Hover effect for buttons header-right */
+.bg-green:hover {
+    background-color: rgb(10, 140, 65);
+}
+
+.bg-brightblue:hover {
+    background-color: rgb(0, 100, 180);
+}
+
+.bg-orange:hover {
+    background-color: rgb(230, 130, 0);
+}
+
+.bg-neutraldarkgrey:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+
+
+
+
+
+
 /* Adding properties to the logo */
 .CoWorld-logo {
     width: 40px;
-    padding: 0px 20px;
+    /* padding: 0px 20px;       (commenting this because giving box sizing at the beginning and width of body as 100px)  */
 }
 
 
@@ -42,7 +118,7 @@ header {
     height: 100%;
     align-items: center;
     padding: 0px 20px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: rgb(33, 33, 33);
     text-decoration: none;
@@ -72,3 +148,45 @@ header {
 .fa-regular {
     padding: 0px 3px;
 }
+
+
+/* Header-right dark-light mode  */
+.toggleLightDark {
+    transform: rotate(180deg);
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+}
+
+/* Header-right dark-light mode hover  */
+.toggleLightDark:hover {
+    color: green;
+}
+
+
+
+
+/* header-right */
+.Header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 15px;
+}
+
+
+.Header-right a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+
+.Header-right a:last-child {
+    padding: 10px 40px;
+}
+
+
