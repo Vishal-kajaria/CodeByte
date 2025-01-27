@@ -112,8 +112,8 @@ header {
 }
 
 
-/* Adding properties to all a link */
-.Header-left a {
+/* Adding properties to all a link and adding menu-btn to make it responsive*/
+.Header-left .menu-btn {
     display: flex;
     height: 100%;
     align-items: center;
@@ -128,18 +128,18 @@ header {
 
 
 /***Adding hover effect to Header-left field ***/
-.Header-left a:hover {
+.Header-left .menu-btn:hover {
     background-color: rgba(13, 155, 72, 0.2);
     color: rgb(13, 155, 72);
 }
 
 /***Header left adding padding for the logo***/
-.Header-left a:first-child {
+.Header-left .menu-btn:first-child {
     padding: 0px;
 }
 
 /***Hover transparent for Header-left logo***/
-.Header-left a:first-child:hover {
+.Header-left .menu-btn:first-child:hover {
     background-color: transparent;
 }
 
@@ -182,11 +182,120 @@ header {
     text-decoration: none;
     border-radius: 60px;
     padding: 10px 20px;
+    min-width: 50px;
 }
 
 
-.Header-right a:last-child {
-    padding: 10px 40px;
+
+
+
+
+
+/* if min-width is not there then this will work */
+#upgrade-btn {
+    display: none;
+}
+
+#getcertified-btn {
+    display: none;
+}
+
+#video-btn {
+    display: none;
+}
+
+#freewebsite-btn {
+    display: none;
+}
+
+#menu-btn-tutorial,
+#menu-btn-reference,
+#menu-btn-exercises {
+    display: none;
 }
 
 
+.toggleLightDark {
+    display: none;
+}
+
+
+.toggleSearch,
+.toggleTranslate {
+    display: none;
+}
+
+
+
+#menu-btn-mobile {
+    display: flex;
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* else -this
+ Responsive   */
+@media all and (min-width:1300px) {
+    #upgrade-btn {
+        display: block;
+    }
+}
+
+
+@media all and (min-width:1150px) {
+    #getcertified-btn {
+        display: block;
+    }
+
+    #video-btn {
+        display: block;
+        display: flex;
+    }
+}
+
+
+@media all and (min-width:910px) {
+    #freewebsite-btn {
+        display: block;
+    }
+}
+
+
+@media all and (min-width:736px) {
+
+    #menu-btn-tutorial,
+    #menu-btn-reference,
+    #menu-btn-exercises {
+        display: flex;
+    }
+
+    #menu-btn-mobile {
+        display: none;
+
+    }
+}
+
+
+@media all and (min-width:758px) {
+    .toggleLightDark {
+        display: block;
+    }
+}
+
+
+@media all and (min-width:400px) {
+    .Header-right a:last-child {
+        padding: 10px 40px;
+    }
+}
+
+@media all and (min-width:341px) {
+
+    .toggleSearch,
+    .toggleTranslate {
+        display: block;
+    }
+}

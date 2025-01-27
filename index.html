@@ -15,28 +15,35 @@
     <body>
         <header>
             <div class="Header-left">
-                <a href="#">
+                <a href="#" class="menu-btn">
                     <div class="CoWorld-logo">
                         <img src="binary-code.png" alt="CoWorld_logo">
                     </div>
                 </a>
-                <a href="#Tutorial">
+                <div href="#Tutorial" class="menu-btn" id="menu-btn-tutorial">
                     Tutorials
                     <i class="fa-regular fa-square-caret-down"></i>
-                </a>
-                <a href="#Reference">
+                </div>
+                <div href="#Reference" class="menu-btn" id="menu-btn-reference">
                     Referene
                     <i class="fa-regular fa-square-caret-down"></i>
-                </a>
-                <a href="#Exercises">
+                </div>
+                <div href="#Exercises" class="menu-btn" id="menu-btn-exercises">
                     Exercises
                     <i class="fa-regular fa-square-caret-down"></i>
-                </a>
-                <a href="#Videos">
+                </div>
+                <div href="#Videos" class="menu-btn" id="video-btn">
                     Videos
 
-                </a>
+                </div>
             </div>
+
+            <!--mobile view-->
+            <div class="menu-btn" id="menu-btn-mobile">
+                Menu
+                <i class="fa-regular fa-square-caret-down"></i>
+            </div>
+
             <div class="Header-right">
                 <div class="toggleLightDark btn">
                     <i class="fa-solid fa-circle-half-stroke"></i>
@@ -47,16 +54,19 @@
                 <div class="toggleSearch">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
-                <a href="#upgrade" class="btn btn-link bg-green">
+                <a href="#upgrade" class="btn btn-link bg-green"
+                    id="upgrade-btn">
                     Upgrade
                 </a>
-                <a href="#GetCertified" class="btn btn-link bg-brightblue">
+                <a href="#GetCertified" class="btn btn-link bg-brightblue"
+                    id="getcertified-btn">
                     Get Certified
                 </a>
-                <a href="#FreeWebsite" class="btn btn-link bg-orange">
+                <a href="#FreeWebsite" class="btn btn-link bg-orange"
+                    id="freewebsite-btn">
                     Free Website
                 </a>
-                <a href="#Login" class="btn btn-link bg-neutraldarkgrey">
+                <a href="#Login" class="btn btn-link bg-neutraldarkgrey" id="login-btn">
                     Log In
                 </a>
             </div>
