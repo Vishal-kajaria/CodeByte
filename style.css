@@ -311,8 +311,10 @@ header {
 .mobile-menu-container {
     /* height: 500px; */
     background-color: var(--bs-greenmenu);
-    display: block;
+    display: none;
 }
+
+
 
 .mobile-menu-container ul {
     display: flex;
@@ -322,6 +324,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
+}
+
+
+.mobile-menu-container ul a {
+    padding: 15px;
 }
 
 .menu-btn-mobile {
