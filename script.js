@@ -6,11 +6,13 @@ let mobileMenuNavEl = document.getElementById("mobile-menu-nav")
 
 MenuBtnMobileEl.addEventListener("click", () => {
     if (MenuBtnMobileElOpenBoolean) {
-        mobileMenuNavEl.style.display = "none"
+        // mobileMenuNavEl.style.display = "none"
+        mobileMenuNavEl.classList.remove("mobile-menu-nav-hidden")
         MenuBtnMobileElOpenBoolean = false
     }
     else {
-        mobileMenuNavEl.style.display = "block"
+        // mobileMenuNavEl.style.display = "block"
+        mobileMenuNavEl.classList.add("mobile-menu-nav-hidden")
         MenuBtnMobileElOpenBoolean = true
     }
 })
@@ -18,6 +20,7 @@ MenuBtnMobileEl.addEventListener("click", () => {
 let mobileNavCloseEl = document.getElementById("mobile-nav-close")
 
 mobileNavCloseEl.addEventListener("click", () => {
-    mobileMenuNavEl.style.display = "none"
+    // mobileMenuNavEl.style.display = "none"
+    mobileMenuNavEl.classList.remove("mobile-menu-nav-hidden")
     MenuBtnMobileElOpenBoolean = false
 })

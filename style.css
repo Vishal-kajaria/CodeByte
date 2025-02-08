@@ -339,9 +339,17 @@ header {
 
 }
 
+.mobile-menu-nav-hidden {
+    display: flex;
+    flex-direction: column;
+}
 
 @media all and (min-width:736px) {
-    .mobile-menu-container {
+    /* .mobile-menu-container {
+        display: none;
+    } */
+
+    .mobile-menu-nav-hidden {
         display: none;
     }
 }
@@ -361,4 +369,20 @@ header {
 .menu-close-btn button {
     border: none;
     background-color: transparent;
+}
+
+
+
+/* working on the navigation bar body  */
+
+
+
+.nested-navigation-container {
+    background-color: var(--bs-green);
+    padding: 20px;
+    color: white;
+}
+
+.nested-navigation-container-close-btn {
+    border: transparent;
 }
