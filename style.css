@@ -5,6 +5,7 @@
     --bs-neutraldarkgrey: rgb(70, 70, 70);
     --bs-white: rgb(255, 255, 255);
     --bs-greenmenu: rgb(13, 155, 72);
+    --bs-yellowmenu: rgb(255, 223, 0);
 }
 
 * {
@@ -90,7 +91,9 @@ header {
 
 
 
-
+.text-white{
+    color: white;
+}
 
 /* Adding properties to the logo */
 .CoWorld-logo {
@@ -378,13 +381,15 @@ header {
 
 
 .nested-navigation-container {
-    background-color: var(--bs-green);
+    background-color: black;
     color: white;
+    position: relative;
+    padding-bottom: 50px;
 }
 
 .nested-navigation-container-close-btn {
-    display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    right: 0;
 
 }
 
@@ -404,11 +409,47 @@ header {
 
 .nested-navigation-container_content{
     width: 90%;
-    background-color: var(--bs-brightblue);
+    background-color: black;
     margin: auto;
+    padding-top: 50px;
+
 }
 
-.nested-navigation-container_content{
+.nested-navigation-container_content h1{
     margin: 0%;
+    color: var(--bs-yellowmenu);
+}
+
+
+
+.nested-navigation-container_content_data{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(100px,1fr));
+}
+
+.nested-navigation-item{
+    margin-right: 20px;
+}
+.nested-navigation-item h2{
+    color: var(--bs-yellowmenu);
+    margin-top: 30px;
+}
+
+.nested-navigation-item a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 550;
+    padding: 5px 7px;
+}
+
+.nested-navigation-item a:hover{
+    background-color: var(--bs-white);
+    color: black;
     
+}
+
+.nested_navigation_hidden{
+    display: none;
 }

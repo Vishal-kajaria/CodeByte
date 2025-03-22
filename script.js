@@ -24,3 +24,10 @@ mobileNavCloseEl.addEventListener("click", () => {
     mobileMenuNavEl.classList.remove("mobile-menu-nav-hidden")
     MenuBtnMobileElOpenBoolean = false
 })
+const NestedNavigationContainer=document.getElementById("nested-navigation-container_id")
+let TutorialEl = document.getElementById("menu-btn-tutorial")
+TutorialEl.addEventListener("click",()=>{
+    TutorialEl.classList.toggle(".bg-green")
+    TutorialEl.classList.toggle(".text-white")
+    NestedNavigationContainer.classList.toggle("nested_navigation_hidden")
+})
